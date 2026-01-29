@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootsrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- style CSS-->
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*header */
+
+        header {
+            background-color: #1E90FF;
+        }
+
+        .title {
+            text-align: center;
+            padding: 30px;
+            color: #fff;
+            font-weight: bolder;
+
+        }
+
+        /*main */
+
+        #caixaFormulario {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            flex-direction: column;
+            box-shadow: 5px 5px 5px #dcdcdc;
+
+        }
+
+        .textForm {
+            font-weight: bolder;
+        }
+
+        .entradaDados input {
+            border: 1px solid #000;
+
+        }
+
+        .erro {
+
+            margin-top: 5px;
+
+        }
+
+        /*secao dadosSalvos */
+        .subtitleDadosSalvos {
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
+        #dados {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 10px;
+            align-items: center;
+            margin-top: 20px;
+            border: 1px solid #dcdcdc;
+        }
+
+        .subtitleDados {
+            font-weight: bolder;
+            width: 220px;
+            background-color: #838B8B;
+            padding: 10px;
+            color: #ffff;
+
+
+
+        }
+
+
+
+        /* media queries */
+
+        /* X-Small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            #dados {
+                flex-direction: column;
+            }
+
+            #dados div {
+                margin-top: 10px;
+            }
+
+        }
+
+        /* Small devices (landscape phones, less than 768px)*/
+        @media (max-width: 767.98px) {
+            #dados {
+                flex-direction: column;
+            }
+
+            #dados div {
+                margin-top: 10px;
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px)*/
+        @media (max-width: 991.98px) {
+            #dados {
+                flex-direction: column;
+            }
+        }
+
+        /* Large devices (desktops, less than 1200px)*/
+        @media (max-width: 1199.98px) {}
+
+        /* X-Large devices (large desktops, less than 1400px)*/
+        @media (max-width: 1399.98px) {}
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1 class="title">Formulário Inteligente</h1>
+
+    </header>
+
+
+    <main> <!-- main-->
+
+        <div id="caixaFormulario"> <!--caixaFormulario-->
+
+            <div class="entradaDados w-50"> <!-- entradaDados-->
+
+                <p class="textForm ">Nome:</p>
+                <input type="text" class="form-control" placeholder="Digite seu nome" id="nome">
+
+                <p class="erroNome erro text-danger"></p>
+
+
+                <p class="textForm ">Email:</p>
+                <input type="text" class="form-control" placeholder="Digite seu email" id="email">
+
+                <p class="erroEmail erro text-danger"></p>
+
+
+                <p class="textForm">Idade:</p>
+                <input type="text" class="form-control" placeholder="Digite sua idade" id="idade">
+
+                <p class="erroIdade erro text-danger"></p>
+
+
+                <p class="textForm">Número telefone:</p>
+                <input type="text" class="form-control" placeholder="Digite seu telefone" id="telefone">
+
+                <p class="erroTelefone erro text-danger"></p>
+
+
+                <div class="button">
+                    <button class="buttonSalvar btn btn-primary w-50">Salvar</button>
+                </div>
+
+                <p class="estado text-secondary mt-2">Estado: <span id="textEstado" class="text-success fw-bold"></span></p>
+
+            </div> <!-- entradaDados-->
+
+
+        </div> <!--caixaFormulario-->
+
+
+
+        <section id="dadosSalvos"> <!--dadosSalvos-->
+
+            <div class="container"> <!--container-->
+
+                <h5 class="subtitleDadosSalvos">Dados Salvos:</h5>
+
+
+                <div id="dados"> <!--salvos-->
+
+                    <div> <!-- nome-->
+                        <h5 class="subtitleDados">Nome</h5>
+
+                        <div id="dadosNome" class="dadosEnviados"> <!--dadosNome-->
+
+
+                        </div> <!--dadosNome-->
+
+                    </div> <!-- nome-->
+
+                    <div> <!-- email-->
+                        <h5 class="subtitleDados">Email</h5>
+
+                        <div id="dadosEmail" class="dadosEnviados"> <!--dadosEmail-->
+
+                        </div> <!--dadosEmail-->
+
+                    </div> <!-- email-->
+
+                    <div> <!--idade-->
+                        <h5 class="subtitleDados">Idade</h5>
+
+                        <div id="dadosIdade" class="dadosEnviados"> <!--dadosIdade-->
+
+                        </div> <!--dadosIdade-->
+
+                    </div> <!--idade-->
+
+
+
+                    <div> <!--telefone-->
+                        <h5 class="subtitleDados">Telefone</h5>
+
+
+                        <div id="dadosTelefone" class="dadosEnviados"> <!--dadosTelefone-->
+
+                        </div> <!--dadosTelefone-->
+
+
+
+                    </div> <!--telefone-->
+
+
+
+
+
+
+                </div> <!--salvos-->
+
+
+                <div class="buttonRemover text-center">
+
+                    <button id="remover" class="btn btn-danger w-50 mt-5">remover dados</button>
+
+                </div>
+
+            </div> <!--container-->
+
+        </section> <!--dadosSalvos-->
+
+    </main> <!-- main-->
+
+
+    <!--scritps-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
