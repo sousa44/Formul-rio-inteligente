@@ -1,5 +1,10 @@
 Formulário Inteligente
 
+
+## 📸 Demonstração
+
+![Formulário Inteligente](assets/captura-formulario.png)
+
 Uma aplicação web simples que cria um formulário inteligente capaz de coletar dados do usuário e processar respostas com lógica em JavaScript.
 
 Este projeto demonstra conceitos de HTML, CSS e JavaScript puro sem frameworks, ideal para quem está aprendendo programação web básica e quer entender como capturar, validar e manipular dados num formulário.
