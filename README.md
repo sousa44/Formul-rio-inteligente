@@ -1,62 +1,36 @@
-Formulário Inteligente
+# Formulário Inteligente
 
+Aplicação web desenvolvida para coleta e validação de dados por meio de formulários interativos, proporcionando uma experiência prática e intuitiva para o usuário.
 
+## Tecnologias Utilizadas
 
+- HTML5
+- CSS3
+- JavaScript
 
+## Funcionalidades
 
-Uma aplicação web simples que cria um formulário inteligente capaz de coletar dados do usuário e processar respostas com lógica em JavaScript.
+- Preenchimento de formulários
+- Validação de campos em tempo real
+- Feedback para o usuário
+- Interface responsiva
+- Tratamento de entradas inválidas
 
-Este projeto demonstra conceitos de HTML, CSS e JavaScript puro sem frameworks, ideal para quem está aprendendo programação web básica e quer entender como capturar, validar e manipular dados num formulário.
+## Como Executar
 
- Sobre
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/sousa44/Formul-rio-inteligente.git
+   ```
 
-Esse projeto implementa um formulário que coleta informações do usuário e interage de maneira dinâmica usando JavaScript. Pode ser usado como base para sistemas de cadastro, feedback ou entrada de dados em páginas estáticas.
+2. Acesse a pasta do projeto:
+   ```bash
+   cd Formul-rio-inteligente
+   ```
 
-Principais objetivos:
+3. Abra o arquivo `index.html` em seu navegador.
 
-Entender como criar e estruturar formulários em HTML.
+## Objetivo
 
-Manipular eventos e dados com JavaScript.
+Praticar conceitos de desenvolvimento front-end, manipulação do DOM e validação de formulários utilizando JavaScript.
 
-Praticar lógica de validação e respostas interativas.
-
- Funcionalidades
-
- Exibição de formulário HTML interativo
- Uso de JavaScript para capturar e processar entradas
- Validação básica de campos
- Feedback visual ao usuário
-
-(Você pode adicionar GIFs ou imagens aqui para mostrar como o formulário funciona.)
-
- Tecnologias utilizadas
-
-Este projeto foi construído com:
-
-HTML5 — estrutura do formulário
-
-CSS3 — estilos e layout
-
-JavaScript — lógica de captura e processamento de dados
-
- Como utilizar (localmente)
-
-Clone o repositório:
-
-git clone https://github.com/sousa44/Formul-rio-inteligente.git
-
-Entre na pasta do projeto:
-
-cd Formul-rio-inteligente
-
-Abra o arquivo index.html no navegador de sua preferência (Chrome, Firefox, etc).
-Não precisa de servidor; apenas abrir o arquivo já funciona.
-
- Estrutura do projeto
-Formul-rio-inteligente/
-│── index.html        # Página com o formulário
-│── script.js         # Lógica de interação com o formulário
-└── README.md         # Documentação do projeto
- Como funciona
-
-O formulário captura dados do usuário e o arquivo script.js processa esses dados quando o formulário é enviado. Dependendo da lógica que você implementar, pode exibir mensagens personalizadas, validar campos ou calcular resultados.
